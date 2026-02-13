@@ -26,9 +26,9 @@ jobs:
       # Step 3: Install Sphinx and dependencies
       - name: Install Python dependencies
         run: |
-          pip install sphinx
-          pip install sphinx-rtd-theme  # Or your preferred Sphinx theme
-          pip install -r requirements.txt  # If you have a requirements file
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade -r requirements.txt
+          sphinx-build --version
 
       # Step 4: Build Sphinx documentation (HTML only)
       - name: Build HTML documentation
