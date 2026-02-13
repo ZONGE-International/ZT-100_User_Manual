@@ -30,9 +30,13 @@ jobs:
           python -m pip install --upgrade -r requirements.txt
           sphinx-build --version
 
-      # Step 4: Build Sphinx documentation (HTML only)
-      - name: Build HTML documentation
-        run: sphinx-build -b html source/ source/_build/html # Update path to use 'docs' directory
+      - name: Install LaTeX tools for PDF build
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-extra texlive-fonts-recommended
+
+      - name: Build HTML + PDF documentation
+        run: make html-with-pdf
 
       # Step 5: Deploy built HTML files to the gh-pages branch
       - name: Deploy to gh-pages branch
@@ -40,7 +44,7 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git checkout -B gh-pages  # Create or switch to the 'gh-pages' branch
-          cp -r source/_build/html/* .  # Copy built files to the root
+          cp -r build/html/* .  # Copy built files to the root
           touch .nojekyll  # Add .nojekyll file to prevent Jekyll processing
           git add .
           git commit -m "Deploy updated documentation"

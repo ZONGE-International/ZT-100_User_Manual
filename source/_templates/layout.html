@@ -2,8 +2,7 @@
 
 {% block document %}
 <div class="zt-page-actions" role="navigation" aria-label="Page actions">
-  <a class="zt-action-link" href="https://github.com/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}{{ pagename }}{{ suffix }}">Edit on GitHub</a>
-  <a class="zt-action-link zt-action-link-primary" href="{{ pathto(pdf_download_path, 1) }}" download>Export PDF</a>
+  <a class="zt-action-link zt-action-link-primary" href="{{ pathto('_static/ZT-100_User_Manual.pdf', 1) }}" target="_blank" rel="noopener">Export PDF</a>
 </div>
 {{ super() }}
 {% endblock %}

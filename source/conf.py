@@ -49,5 +49,4 @@ html_context = {
   'github_user': 'ZONGE-International',
   'github_repo': 'ZT-100_User_Manual',
   'github_version': 'main/source/',
-  'pdf_download_path': '_static/ZT-100_User_Manual.pdf',
 }
