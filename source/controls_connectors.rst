@@ -1,61 +1,48 @@
+******************************
 ZT-100 Controls and Connectors
-==============================
+******************************
 
-Front Panel Overview
---------------------
+Front Panel
+===========
 
-.. figure:: img/fotos/Main_Hardware_Elements.png
+.. figure:: img/fotos/ZT100-B_front.png
 
-    Control elements and connectors of the ZT-100 controller.
+    ZT100-B front panel.
 
-The ZT-100 front panel uses a 128 x 64 pixel transflective display and three
-push buttons for menu control: **UP**, **DOWN**, and **SELECT (MODE)**. The
-transflective display is readable in bright sunlight, and the LED backlight
-allows operation at night.
+From left ro right the function of the ZT100-B front panel elements are:
 
-There are two additional action buttons:
+#. The **Keyed ON/OFF** switch is connected to the ICE 320/C-14 connector in the back. It directly interrupts power to all internal boards. The loss of power on the internal electronics will also disengage the contactor for the main power input.
+#. Pushing the **Emergency switch** will disengage the contactor interrupting the positive connection from the power supply to the ZT100-B. It will also put all switching elements into an open state. The power for the digital electronics will not be interrupted by the emergency switch.
+#. Make sure the **Fans** are unobstructed at all times.
+#. The **black mushroom antenna** above the Reset and Transmit buttons is the WiFi antenna of the ZT100-B. Make sure it is unobstructed for optimal performance.
+#. Pushing the **Reset** button starts the reset/arm sequence, or stops transmission.
+#. Pushing the **TRANSMIT** button starts transmission during the arm window.
+#. The 128 x 64 pixel **transflective display** is readable in bright sunlight. A LED backlight allows operation at night.
+#. Three push buttons **UP**, **DOWN**, and **SELECT (MODE)** are used for menu control.
 
-- **RESET**: Starts the reset/arm sequence, or stops transmit.
-- **TRANSMIT**: Starts transmit during the arm window, or stops transmit.
 
-Back Panel Connectors
----------------------
 
-On the back panel you will find:
+Back Panel
+==========
 
-- A 50 Ohm BNC connector for an active GPS antenna.
-- A power connector.
-- The Zonge transmitter interface connector.
-- A CAN output connector.
+.. figure:: img/fotos/ZT100-B_back.png
 
-ZONGE Transmitter Connector Pinout
-----------------------------------
+    ZT100-B back panel.
 
-On the ZT-100, the transmitter-control connector is a **15-pin female**
-MIL-spec circular connector. This allows the ZT-100 to be controlled by an
-XMT-R using the matching cable/connector set.
+From left ro right the function of the ZT100-B back panel elements are:
 
-.. figure:: img/fotos/transmitter_connector_pinout.png
+#. The four BNC monitoring outputs on the left have the following functions:
+    #. The **ON/OFF** monitor provides a digital, 3.3 V amplitude signal referencing the state of the  ON/OFF control signal. This signal control the flow of current. It is an active low signal, meaning the transmitter is in an ON state (current is flowing) when this signal is low.
+    #. The **Polarity** monitor provides a digital, 3.3 V amplitude signal referencing the state of the polarity control signal. This signal controls the current direction from plus to minus or minus to plus.
+    #. The **Voltage** monitor provides an isolated 2 mV/V representation of the output voltage.
+    #. The **Current** monitor provides an isolated 20 mV/V representation of the output current.
+#. The **CAN Connector** next to the monitoring connectors connects to the internal CAN bus of the ZT100-B.
+#. The **positive and negative output connectors** connect to the dipole or loop antenna used in a geophysical survey.
+#. The **positive and negative input connectors** connect to the DC output of a suitable power supply. Always make sure to check the output polarity of the power supply matches the input polarity of the ZT100-B.
+#. The **GPS antenna connector** is a 50 Ohm BNC connector for an active GPS antenna. The ZT100-B uses a GNSS module tracking GPS, Glonas and Baidu sattelites. Use a 3.3 V active GPS antenna with minimum gain of 15 dB and maximum gain of 30 dB.
+#. The **E STP** connector allows to connect additional emergency stop switches.
+#. The **External Controll** connector allows to control the switching of the ZT100-B from an external controller.
+#. The IEC 320/C-14 **Power Connector** is used to supply power for the internal electronics of the ZT100-B. The digital supply voltage must be between 85 VAC and 264 VAC.
 
-    Pinout of the 15-pin MIL transmitter controller connector. POL is on pin D
-    (red), COMMON (GND) is on pin N (green) and ON/OFF is on pin K (yellow).
 
-Use Zonge cable type **XMT/16-CN/6** for compatible transmitter/control
-connections.
 
-ZONGE Power Connector
----------------------
-
-The power connector is a 3-pin MIL-spec circular connector of type
-**KPT02E12-3S**.
-
-- Pin A: Positive lead from an external generator power source
-  (for example Zonge ZMG9, ZMG30, or similar)
-- Pin B: Negative lead
-- Pin C: Not connected
-
-GPS Antenna Connector
----------------------
-
-The GPS antenna connects via a 50 Ohm BNC connector. Use a 3.3 V active GPS
-antenna with minimum gain of 15 dB and maximum gain of 30 dB.

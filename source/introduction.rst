@@ -1,7 +1,17 @@
+
 Introduction
 ============
 
-This manual covers day-to-day operation of the ZT-100 control system.
+.. warning::
+   .. image:: img/HighVoltageWarningSymbol_BG_removed.png
+      :align: left
+      :scale: 7%
+      
+   The ZT100-B is a high power transmitter for geophysical purposes. It operates at lethal voltages. Only trained, qualified personnel should operate, maintain or service it.
+
+
+
+This manual covers day-to-day operation of the ZT100-B control system.
 
 The ZT-100 provides GPS-synchronized transmitter control with:
 

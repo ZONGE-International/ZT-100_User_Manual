@@ -1,8 +1,9 @@
+****************************
 Basic Use and Menu Structure
-============================
+****************************
 
 Main Page Overview
-------------------
+==================
 
 The main page provides a quick view of essential information:
 
@@ -21,7 +22,7 @@ The top status area shows:
 - **Wi-Fi status**
 
 Button Basics
--------------
+=============
 
 Long-press is about 2 seconds.
 
@@ -36,7 +37,7 @@ Long-press is about 2 seconds.
 - **TRANSMIT**: Starts transmit during the arm window, or stops transmit.
 
 Mode Adjustment on Main Page
-----------------------------
+============================
 
 To switch modes on the main page:
 
@@ -48,7 +49,7 @@ To switch modes on the main page:
    :width: 50%
 
 Frequency Adjustment on Main Page
----------------------------------
+=================================
 
 To adjust frequency on the main page:
 
@@ -60,7 +61,7 @@ To adjust frequency on the main page:
    :width: 50%
 
 Modes
------
+=====
 
 - **100% DC**: Full frequency range.
 - **50%**: Limited frequency range (currently 0.0078125 Hz to 32 Hz).
@@ -73,7 +74,7 @@ You can switch between **Basic** and **Advanced** either from the device menu
 (**More Info -> XMT Mode**) or from the web interface **More** panel.
 
 Menu Options
-------------
+============
 
 From the MENU screen you can:
 
@@ -86,7 +87,7 @@ From the MENU screen you can:
    :width: 50%
 
 Value Editor
-------------
+============
 
 Selecting a limit opens the value editor:
 
@@ -100,7 +101,7 @@ Selecting a limit opens the value editor:
    :width: 50%
 
 More Info Screen
-----------------
+================
 
 The More Info screen shows status and configuration:
 
@@ -121,7 +122,7 @@ The More Info screen shows status and configuration:
    :width: 50%
 
 GPS Details Screen
-------------------
+==================
 
 The GPS details list includes:
 
@@ -137,7 +138,7 @@ The GPS details list includes:
    :width: 50%
 
 Transmit Workflow (Step-by-Step)
---------------------------------
+================================
 
 1. Press **RESET** to start the reset/arm sequence.
 2. The system checks all protection and status conditions.
@@ -148,7 +149,7 @@ Transmit Workflow (Step-by-Step)
 7. Press **TRANSMIT** or **RESET** to stop transmit and return to safe state.
 
 Status Labels (Top Bar)
------------------------
+=======================
 
 The top bar shows a short label for the transmit state. Common labels are:
 
@@ -164,7 +165,7 @@ The top bar shows a short label for the transmit state. Common labels are:
 - **TX x.xA**: RMS current shown during transmit.
 
 Error Labels (Subsystem Codes)
-------------------------------
+==============================
 
 Error labels appear in the top bar and in the TX Log. Any error forces the
 system back to a safe wait state.

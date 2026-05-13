@@ -3,20 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ZT-100 User Manual
-==================
+===================
+ZT100-B User Manual
+===================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   introduction.rst
-   quick_start.rst
+   safety.rst
    controls_connectors.rst
+   first_use.rst
    menu_structure.rst
    web_interface.rst
    user_generated_signals.rst
    troubleshooting.rst
+   specifications.rst
+   connectors.rst
+   introduction.rst
+   messages.rst
+   
 
 
 .. Indices and tables
