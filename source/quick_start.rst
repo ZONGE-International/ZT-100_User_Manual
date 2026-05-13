@@ -6,8 +6,7 @@ This section covers the fastest path from power-on to first transmit.
 Before You Start
 ----------------
 
-- Connect the ZT-100 to an external generator power source (for example
-  **Zonge ZMG9**, **ZMG30**, or similar).
+- Connect the ZT-100 to an external DC power source.
 - Connect the GPS antenna.
 - Connect the transmitter cable.
 
