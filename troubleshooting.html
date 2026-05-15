@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troubleshooting &mdash; ZT-100 User Manual</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=fa1c30a4" />
+
+  
+    <link rel="shortcut icon" href="_static/zonge.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d5501fd1"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Specifications" href="specifications.html" />
+    <link rel="prev" title="Generate User Defined Sequences" href="user_generated_signals.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/Zonge_logo_white_transparent.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="safety.html">Transmitter Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controls_connectors.html">ZT-100 Controls and Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first_use.html">First Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu_structure.html">Basic Use and Menu Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Using the Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_generated_signals.html">Generate User Defined Sequences</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#no-gps-lock-sync-searching">No GPS Lock / Sync Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transmit-button-disabled">Transmit Button Disabled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ore-out-of-range-resistance">ORE (Out-of-Range Resistance)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#err-shared-error-line">ERR (Shared Error Line)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-labels">Error Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wi-fi-not-visible">Wi-Fi Not Visible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-t-open-the-web-ui">Can’t Open the Web UI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-file-upload-fails">Custom File Upload Fails</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ota-update-fails">OTA Update Fails</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectors.html">Connector Types and Pinouts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messages.html">Display Messages</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ZT-100 User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Troubleshooting</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ZONGE-International/ZT-100_User_Manual/blob/main/source/troubleshooting.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+<div class="zt-page-actions" role="navigation" aria-label="Page actions">
+  <a class="zt-action-link zt-action-link-primary" href="_static/ZT-100_User_Manual.pdf" target="_blank" rel="noopener">Export PDF</a>
+</div>
+
+           <div itemprop="articleBody">
+             
+  <section id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h1>
+<p>This section focuses on the most common operational issues and how to resolve
+or diagnose them using the screen and web interface.</p>
+<section id="no-gps-lock-sync-searching">
+<h2>No GPS Lock / Sync Searching<a class="headerlink" href="#no-gps-lock-sync-searching" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Satellite count is low or zero.</p></li>
+<li><p>Sync indicator shows searching.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Verify the GPS antenna is connected to the BNC port.</p></li>
+<li><p>Move to an open area with clear sky view.</p></li>
+<li><p>Wait a few minutes for initial acquisition.</p></li>
+</ul>
+</section>
+<section id="transmit-button-disabled">
+<h2>Transmit Button Disabled<a class="headerlink" href="#transmit-button-disabled" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p><strong>Transmit</strong> is disabled on the web UI.</p></li>
+<li><p>The screen does not show <strong>RDY</strong>.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Press <strong>RESET</strong> to start the reset/arm sequence.</p></li>
+<li><p>Wait for <strong>RDY</strong> (arm window). The window is short (about 2 seconds).</p></li>
+<li><p>If <strong>RDY</strong> never appears, check for errors (see Error Labels).</p></li>
+</ul>
+</section>
+<section id="ore-out-of-range-resistance">
+<h2>ORE (Out-of-Range Resistance)<a class="headerlink" href="#ore-out-of-range-resistance" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Status label shows <strong>ORE</strong>.</p></li>
+<li><p>Transmit does not start after pressing <strong>TRANSMIT</strong>.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Verify transmitter and load connections.</p></li>
+<li><p>Check that the minimum/maximum resistance limits are appropriate.</p></li>
+<li><p>Press <strong>RESET</strong> and try transmit again.</p></li>
+</ul>
+</section>
+<section id="err-shared-error-line">
+<h2>ERR (Shared Error Line)<a class="headerlink" href="#err-shared-error-line" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Status label shows <strong>ERR</strong>.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>A safety/monitoring subsystem has asserted the shared error line.</p></li>
+<li><p>Check the TX Log or error label on the screen.</p></li>
+<li><p>Resolve the underlying error and press <strong>RESET</strong>.</p></li>
+</ul>
+</section>
+<section id="error-labels">
+<h2>Error Labels<a class="headerlink" href="#error-labels" title="Link to this heading"></a></h2>
+<p>Any error label returns the system to a safe wait state. Use the label to
+identify the source subsystem:</p>
+<ul class="simple">
+<li><p><strong>SM</strong> = Safety system</p></li>
+<li><p><strong>MM</strong> = Monitoring system</p></li>
+<li><p><strong>GM</strong> = Gate driver system</p></li>
+<li><p><strong>FM</strong> = Cooling/fan system</p></li>
+</ul>
+<p>Common errors:</p>
+<ul class="simple">
+<li><p><strong>SM EMER</strong>: Emergency stop input active.</p></li>
+<li><p><strong>SM GIUV/GIOV</strong>: Global input under/over-voltage.</p></li>
+<li><p><strong>SM UDIUV/UDIOV</strong>: User-defined under/over-voltage limit.</p></li>
+<li><p><strong>MM OVP/OVN</strong>: Over-voltage (positive/negative).</p></li>
+<li><p><strong>MM OCP/OCN</strong>: Over-current (positive/negative).</p></li>
+<li><p><strong>GM OTMP</strong>: Gate driver over-temperature.</p></li>
+<li><p><strong>SM/MM/GM/FM LERR</strong>: Local error on that subsystem.</p></li>
+</ul>
+</section>
+<section id="wi-fi-not-visible">
+<h2>Wi-Fi Not Visible<a class="headerlink" href="#wi-fi-not-visible" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>No ZT-100 SSID appears.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>On the front panel, open <strong>More Info</strong> and set <strong>Wi-Fi status</strong> to <strong>ON</strong>.</p></li>
+<li><p>Wait for the Wi-Fi icon to appear on the top bar.</p></li>
+</ul>
+</section>
+<section id="can-t-open-the-web-ui">
+<h2>Can’t Open the Web UI<a class="headerlink" href="#can-t-open-the-web-ui" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Browser cannot reach the device page.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>If in hotspot mode, connect to the device SSID and open
+<code class="docutils literal notranslate"><span class="pre">http://10.10.10.10/</span></code>.</p></li>
+<li><p>If in local network mode, use the IP address shown on the screen.</p></li>
+<li><p>Confirm <strong>Wi-Fi status</strong> is <strong>ON</strong>.</p></li>
+</ul>
+</section>
+<section id="custom-file-upload-fails">
+<h2>Custom File Upload Fails<a class="headerlink" href="#custom-file-upload-fails" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Upload rejected or file not listed.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Ensure the file extension is <strong>.usm</strong>.</p></li>
+<li><p>The web UI rejects files larger than 256 KB.</p></li>
+<li><p>Stay in <strong>Custom</strong> mode while uploading.</p></li>
+</ul>
+</section>
+<section id="ota-update-fails">
+<h2>OTA Update Fails<a class="headerlink" href="#ota-update-fails" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Upload rejected or target mismatch.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Confirm the firmware file matches the selected target in the web UI.</p></li>
+<li><p>If the upload is rejected, re-check target selection and file version.</p></li>
+<li><p>Keep the browser open until the update process completes.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user_generated_signals.html" class="btn btn-neutral float-left" title="Generate User Defined Sequences" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="specifications.html" class="btn btn-neutral float-right" title="Specifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, ZONGE International.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

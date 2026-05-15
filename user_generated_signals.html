@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate User Defined Sequences &mdash; ZT-100 User Manual</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=fa1c30a4" />
+
+  
+    <link rel="shortcut icon" href="_static/zonge.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d5501fd1"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Troubleshooting" href="troubleshooting.html" />
+    <link rel="prev" title="Using the Web Interface" href="web_interface.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/Zonge_logo_white_transparent.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="safety.html">Transmitter Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controls_connectors.html">ZT-100 Controls and Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first_use.html">First Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu_structure.html">Basic Use and Menu Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Using the Web Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Generate User Defined Sequences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#control-signals">Control Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output-signal-example">Output Signal Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generating-the-signal-definition-file">Generating the Signal Definition File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-format">File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-generate-a-prbs-usm-file">Example: Generate a PRBS .usm File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-a-usm-file">Uploading a .usm File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transmitting-a-user-defined-sequence">Transmitting a User Defined Sequence</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectors.html">Connector Types and Pinouts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messages.html">Display Messages</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ZT-100 User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Generate User Defined Sequences</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ZONGE-International/ZT-100_User_Manual/blob/main/source/user_generated_signals.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+<div class="zt-page-actions" role="navigation" aria-label="Page actions">
+  <a class="zt-action-link zt-action-link-primary" href="_static/ZT-100_User_Manual.pdf" target="_blank" rel="noopener">Export PDF</a>
+</div>
+
+           <div itemprop="articleBody">
+             
+  <section id="generate-user-defined-sequences">
+<h1>Generate User Defined Sequences<a class="headerlink" href="#generate-user-defined-sequences" title="Link to this heading"></a></h1>
+<p>In addition to the pre-programmed 50% and 100% duty-cycle control signals the
+ZT-100 allows user-defined control signals in <strong>Custom</strong> mode. This enables
+specialized ternary transmission sequences when required by the survey design.</p>
+<section id="control-signals">
+<h2>Control Signals<a class="headerlink" href="#control-signals" title="Link to this heading"></a></h2>
+<p>The transmitter output can have three states:</p>
+<ol class="arabic simple">
+<li><p>Positive ON</p></li>
+<li><p>OFF</p></li>
+<li><p>Negative ON</p></li>
+</ol>
+<p>Positive ON and Negative ON refer to current flow through the transmitter in
+opposite directions. The ZT-100 defines the output signal using two binary
+control signals:</p>
+<ol class="arabic simple">
+<li><p>ON#</p></li>
+<li><p>POL</p></li>
+</ol>
+<p>Each control signal can be LOW or HIGH. HIGH corresponds to 3.3 V and LOW
+corresponds to 0 V.</p>
+<ul class="simple">
+<li><p><strong>ON#</strong> controls whether the transmitter is on. The <cite>#</cite> indicates <strong>active
+low</strong>. When ON# is LOW the transmitter is on; when ON# is HIGH the transmitter
+is off.</p></li>
+<li><p><strong>POL</strong> controls the direction of current flow. POL HIGH corresponds to
+positive current flow, POL LOW corresponds to negative current flow.</p></li>
+</ul>
+</section>
+<section id="output-signal-example">
+<h2>Output Signal Example<a class="headerlink" href="#output-signal-example" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id1">
+<img alt="_images/50_DC_example.png" src="_images/50_DC_example.png" />
+<figcaption>
+<p><span class="caption-text">Generation of a 50% duty-cycle output signal.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The red graph shows ON#, the green graph shows POL, and the black graph shows
+resulting transmitter output. The sequence includes all three states.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The control signals are binary and do not contain amplitude
+information. The output signal amplitude is set on the transmitter hardware.</p>
+</div>
+</section>
+<section id="generating-the-signal-definition-file">
+<h2>Generating the Signal Definition File<a class="headerlink" href="#generating-the-signal-definition-file" title="Link to this heading"></a></h2>
+<p>To use a user-defined signal, create a <strong>.usm</strong> file and upload it via the web
+interface. The file contains a sequence of control signal states. At each base
+clock tick, the next POL and ON# values are read and applied. When the end of
+file is reached the sequence loops back to the beginning.</p>
+</section>
+<section id="file-format">
+<h2>File Format<a class="headerlink" href="#file-format" title="Link to this heading"></a></h2>
+<p>The .usm file is stored in binary form and contains three parts:</p>
+<ol class="arabic simple">
+<li><p>Sequence length</p></li>
+<li><p>List of POL entries</p></li>
+<li><p>List of ON# entries</p></li>
+</ol>
+<p>The sequence length is a 16-bit unsigned integer in big-endian byte order,
+allowing up to 65,536 entries.</p>
+<p>POL and ON# entries are stored as packed bits. Every eight consecutive bits are
+stored as a byte. If the sequence length is not a multiple of 8, pad the final
+byte with zeros. The firmware ignores padded bits based on the length value.</p>
+</section>
+<section id="example-generate-a-prbs-usm-file">
+<h2>Example: Generate a PRBS .usm File<a class="headerlink" href="#example-generate-a-prbs-usm-file" title="Link to this heading"></a></h2>
+<p>The following Python code generates a 4th order PRBS sequence file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="linenos"> 2</span><span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">formatter</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;int&#39;</span><span class="p">:</span><span class="nb">hex</span><span class="p">})</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">pol</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>           <span class="c1"># sequence for polarity</span>
+<span class="linenos"> 5</span><span class="n">on_</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>           <span class="c1"># sequence for ON# (active low)</span>
+<span class="linenos"> 6</span><span class="n">slen</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pol</span><span class="p">)</span>                                 <span class="c1"># sequence length</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># Pad to a multiple of 8</span>
+<span class="linenos"> 9</span><span class="n">apol</span> <span class="o">=</span> <span class="mi">8</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">pol</span><span class="p">)</span><span class="o">%</span><span class="mi">8</span>
+<span class="linenos">10</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">apol</span><span class="p">):</span>
+<span class="linenos">11</span>    <span class="n">pol</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="n">on_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="n">pol_bytes</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">packbits</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pol</span><span class="p">),</span><span class="n">bitorder</span><span class="o">=</span><span class="s1">&#39;big&#39;</span><span class="p">))</span>
+<span class="linenos">15</span><span class="n">on_bytes</span>  <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">packbits</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">on_</span><span class="p">),</span><span class="n">bitorder</span><span class="o">=</span><span class="s1">&#39;big&#39;</span><span class="p">))</span>
+<span class="linenos">16</span><span class="nb">print</span><span class="p">(</span><span class="n">pol_bytes</span><span class="p">)</span>
+<span class="linenos">17</span><span class="nb">print</span><span class="p">(</span><span class="n">on_bytes</span><span class="p">)</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sequence length = </span><span class="si">{}</span><span class="s1">, </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slen</span><span class="p">,</span><span class="n">slen</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;big&#39;</span><span class="p">)))</span>
+<span class="linenos">20</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pol array = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pol</span><span class="p">))</span>
+<span class="linenos">21</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ON_ array = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">on_</span><span class="p">))</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="k">with</span> <span class="nb">open</span> <span class="p">(</span><span class="s2">&quot;PRBS_4.usm&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">binary_file</span><span class="p">:</span>
+<span class="linenos">24</span>    <span class="n">binary_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">slen</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;big&#39;</span><span class="p">))</span>
+<span class="linenos">25</span>    <span class="n">binary_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">pol_bytes</span><span class="p">)</span>
+<span class="linenos">26</span>    <span class="n">binary_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">on_bytes</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="uploading-a-usm-file">
+<h2>Uploading a .usm File<a class="headerlink" href="#uploading-a-usm-file" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Enable Wi-Fi on the ZT-100.</p></li>
+<li><p>Open the web interface and switch to <strong>Custom</strong> mode.</p></li>
+<li><p>Use the file loader to upload the .usm file.</p></li>
+</ol>
+</section>
+<section id="transmitting-a-user-defined-sequence">
+<h2>Transmitting a User Defined Sequence<a class="headerlink" href="#transmitting-a-user-defined-sequence" title="Link to this heading"></a></h2>
+<p>The .usm file defines the control sequence only. Select the desired base
+frequency in the web interface to generate the final transmitter waveform.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="web_interface.html" class="btn btn-neutral float-left" title="Using the Web Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, ZONGE International.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
