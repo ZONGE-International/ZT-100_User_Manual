@@ -4,8 +4,9 @@ ZT-100 Controls and Connectors
 
 Front Panel
 ===========
+.. .. figure:: img/fotos/ZT100-B_front.png
 
-.. figure:: img/fotos/ZT100-B_front.png
+.. figure:: img/ZT-100B_front_rendering.png
 
     ZT100-B front panel.
 
@@ -25,7 +26,8 @@ From left ro right the function of the ZT100-B front panel elements are:
 Back Panel
 ==========
 
-.. figure:: img/fotos/ZT100-B_back.png
+.. .. figure:: img/fotos/ZT100-B_back.png
+.. figure:: img/ZT-100B_back_drawing.png
 
     ZT100-B back panel.
 
