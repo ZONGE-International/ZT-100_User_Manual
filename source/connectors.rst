@@ -1,5 +1,5 @@
 ***************************
-Connector Types and Pinouts
+Connector Types and Pinouts.
 ***************************
 
 External Transmitter Control
