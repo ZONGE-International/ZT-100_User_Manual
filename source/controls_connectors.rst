@@ -37,7 +37,7 @@ From left ro right the function of the ZT100-B back panel elements are:
     #. The **ON/OFF** monitor provides a digital, 3.3 V amplitude signal referencing the state of the  ON/OFF control signal. This signal control the flow of current. It is an active low signal, meaning the transmitter is in an ON state (current is flowing) when this signal is low.
     #. The **Polarity** monitor provides a digital, 3.3 V amplitude signal referencing the state of the polarity control signal. This signal controls the current direction from plus to minus or minus to plus.
     #. The **Voltage** monitor provides an isolated 2 mV/V representation of the output voltage.
-    #. The **Current** monitor provides an isolated 20 mV/V representation of the output current.
+    #. The **Current** monitor provides an isolated 20 mV/A representation of the output current.
 #. The **CAN Connector** next to the monitoring connectors connects to the internal CAN bus of the ZT100-B.
 #. The **positive and negative output connectors** connect to the dipole or loop antenna used in a geophysical survey.
 #. The **positive and negative input connectors** connect to the DC output of a suitable power supply. Always make sure to check the output polarity of the power supply matches the input polarity of the ZT100-B.
