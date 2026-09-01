@@ -164,43 +164,12 @@ The top bar shows a short label for the transmit state. Common labels are:
 - **R x.x**: Last measured resistance shown during transmit.
 - **TX x.xA**: RMS current shown during transmit.
 
-Error Labels (Subsystem Codes)
-==============================
+Error Codes
+===========
 
-Error labels appear in the top bar and in the TX Log. Any error forces the
-system back to a safe wait state.
+Protection codes such as **SM EMER**, **MM OCP**, and **GM OTMP** identify the
+subsystem and condition that stopped operation. Any error code disables the
+transmitter output and returns the controller to a safe wait state.
 
-Module codes:
-
-- **SM** = Safety system
-- **MM** = Monitoring system
-- **GM** = Gate driver system
-- **FM** = Cooling/fan system
-
-Safety System (SM) errors:
-
-- **SM EMER**: Emergency stop input active.
-- **SM GIUV**: Global input under-voltage triggered.
-- **SM GIOV**: Global input over-voltage triggered.
-- **SM UDIUV**: User-defined under-voltage limit triggered.
-- **SM UDIOV**: User-defined over-voltage limit triggered.
-- **SM LERR**: Safety system local error.
-- **SM ERR**: Other safety system error.
-
-Monitoring System (MM) errors:
-
-- **MM OVP**: Over-voltage positive.
-- **MM OVN**: Over-voltage negative.
-- **MM OCP**: Over-current positive.
-- **MM OCN**: Over-current negative.
-- **MM LERR**: Monitoring system local error.
-- **MM ERR**: Other monitoring system error.
-
-Gate Driver System (GM) errors:
-
-- **GM OTMP**: Gate driver over-temperature.
-- **GM LERR**: Gate driver local error.
-
-Cooling/Fan System (FM) errors:
-
-- **FM LERR**: Cooling/fan system local error.
+For the meaning of every firmware-defined code and the recommended operator
+response, see :ref:`zt100-error-code-reference`.
