@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troubleshooting &mdash; ZT-100 User Manual</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=055cedc8" />
+
+  
+    <link rel="shortcut icon" href="_static/zonge.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d5501fd1"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Specifications" href="specifications.html" />
+    <link rel="prev" title="Generate User Defined Sequences" href="user_generated_signals.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/Zonge_logo_white_transparent.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="safety.html">Transmitter Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controls_connectors.html">ZT-100 Controls and Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first_use.html">First Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu_structure.html">Basic Use and Menu Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Using the Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_generated_signals.html">Generate User Defined Sequences</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#no-gps-lock-sync-searching">No GPS Lock / Sync Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transmit-button-disabled">Transmit Button Disabled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-codes-and-corrective-actions">Error Codes and Corrective Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wi-fi-not-visible">Wi-Fi Not Visible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-t-open-the-web-ui">Can’t Open the Web UI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-file-upload-fails">Custom File Upload Fails</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ota-update-fails">OTA Update Fails</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectors.html">Connector Types and Pinouts.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messages.html">Display Messages</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ZT-100 User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Troubleshooting</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ZONGE-International/ZT-100_User_Manual/blob/main/source/troubleshooting.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+<div class="zt-page-actions" role="navigation" aria-label="Page actions">
+  <a class="zt-action-link zt-action-link-primary" href="_static/ZT-100_User_Manual.pdf" target="_blank" rel="noopener">Export PDF</a>
+</div>
+
+           <div itemprop="articleBody">
+             
+  <section id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h1>
+<p>This section focuses on the most common operational issues and how to resolve
+or diagnose them using the screen and web interface.</p>
+<section id="no-gps-lock-sync-searching">
+<h2>No GPS Lock / Sync Searching<a class="headerlink" href="#no-gps-lock-sync-searching" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Satellite count is low or zero.</p></li>
+<li><p>Sync indicator shows searching.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Verify the GPS antenna is connected to the BNC port.</p></li>
+<li><p>Move to an open area with clear sky view.</p></li>
+<li><p>Wait a few minutes for initial acquisition.</p></li>
+</ul>
+</section>
+<section id="transmit-button-disabled">
+<h2>Transmit Button Disabled<a class="headerlink" href="#transmit-button-disabled" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p><strong>Transmit</strong> is disabled on the web UI.</p></li>
+<li><p>The screen does not show <strong>RDY</strong>.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Press <strong>RESET</strong> to start the reset/arm sequence.</p></li>
+<li><p>Wait for <strong>RDY</strong> (arm window). The window is short (about 2 seconds).</p></li>
+<li><p>If <strong>RDY</strong> never appears, note the displayed code and use the
+<a class="reference internal" href="#zt100-error-code-reference"><span class="std std-ref">Error Codes and Corrective Actions</span></a>.</p></li>
+</ul>
+</section>
+<section id="error-codes-and-corrective-actions">
+<span id="zt100-error-code-reference"></span><h2>Error Codes and Corrective Actions<a class="headerlink" href="#error-codes-and-corrective-actions" title="Link to this heading"></a></h2>
+<p>An error code identifies the protection function or subsystem that prevented
+operation. The controller disables the transmitter output and returns to a
+safe wait state whenever an error is detected.</p>
+<p>Codes beginning with a subsystem prefix identify the reporting module:</p>
+<ul class="simple">
+<li><p><strong>SM</strong> – Safety module</p></li>
+<li><p><strong>MM</strong> – Monitoring module</p></li>
+<li><p><strong>GM</strong> – Gate-driver module</p></li>
+<li><p><strong>FM</strong> – Cooling/fan module</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>An error code means that a protection condition has stopped operation.
+Do not bypass an interlock or repeatedly reset the unit without correcting
+the cause. Connected power equipment may remain hazardous even though the
+ZT-100 has disabled its transmitter output.</p>
+</div>
+<table class="zt-error-code-table docutils align-default" id="id1">
+<caption><span class="caption-text">Error-code reference</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 16.0%" />
+<col style="width: 34.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Display code</p></th>
+<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Operator response</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>ERR</strong></p></td>
+<td><p>The shared system error line is active, but a more specific source has
+not been identified.</p></td>
+<td><p>Keep the unit stopped. Check the supply, transmitter, load, and cable
+connections. After correcting any visible problem, press <strong>RESET</strong> once
+to run the protection check again. If <strong>ERR</strong> returns without a more
+specific code, contact Zonge International technical support.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ORE</strong></p></td>
+<td><p>The measured load resistance is outside the configured <strong>Minimum
+Resistance</strong> and <strong>Maximum Resistance</strong> limits, or the resistance
+measurement did not complete within the allowed time.</p></td>
+<td><p>Check the transmitter cable and load circuit, then confirm that both
+resistance limits are appropriate for the installation. Press <strong>RESET</strong>
+and repeat the transmit sequence only after correcting the cause.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SM EMER</strong></p></td>
+<td><p>The emergency-stop input is active.</p></td>
+<td><p>Make the work area safe, determine why the emergency stop was
+activated, and release it only when safe to do so. Verify the
+emergency-stop circuit, then press <strong>RESET</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>SM GIUV</strong></p></td>
+<td><p>The safety module’s global input under-voltage protection is active.</p></td>
+<td><p>Verify the input power source and power connections. Restore the input
+voltage to the permitted range, then press <strong>RESET</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SM GIOV</strong></p></td>
+<td><p>The safety module’s global input over-voltage protection is active.</p></td>
+<td><p>Verify the input power source and power connections. Restore the input
+voltage to the permitted range, then press <strong>RESET</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>SM UDIUV</strong></p></td>
+<td><p>The input voltage is below the user-defined <strong>Input Under Voltage</strong>
+limit.</p></td>
+<td><p>Compare the configured limit with the actual input voltage. Correct the
+supply condition or, if authorized, set an appropriate limit; then
+press <strong>RESET</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SM UDIOV</strong></p></td>
+<td><p>The input voltage is above the user-defined <strong>Input Over Voltage</strong>
+limit.</p></td>
+<td><p>Compare the configured limit with the actual input voltage. Correct the
+supply condition or, if authorized, set an appropriate limit; then
+press <strong>RESET</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>SM LERR</strong></p></td>
+<td><p>The safety module has asserted its local error flag without a more
+specific safety input code.</p></td>
+<td><p>Confirm that the emergency-stop and input-voltage conditions are
+normal, then press <strong>RESET</strong> once. If the code returns, contact Zonge
+International technical support.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SM ERR</strong></p></td>
+<td><p>The safety module reported an error that is not represented by a more
+specific display code.</p></td>
+<td><p>Record the code and operating conditions. Press <strong>RESET</strong> only after all
+safety inputs are normal. If the code returns, contact Zonge
+International technical support.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>MM OVP</strong></p></td>
+<td><p>Over-voltage was detected on the positive output half-cycle.</p></td>
+<td><p>Keep the unit stopped and inspect the transmitter, load, cable, and
+operating setup. Press <strong>RESET</strong> only after correcting the cause. If the
+code returns, have the system serviced.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>MM OVN</strong></p></td>
+<td><p>Over-voltage was detected on the negative output half-cycle.</p></td>
+<td><p>Keep the unit stopped and inspect the transmitter, load, cable, and
+operating setup. Press <strong>RESET</strong> only after correcting the cause. If the
+code returns, have the system serviced.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>MM OCP</strong></p></td>
+<td><p>Over-current was detected on the positive output half-cycle.</p></td>
+<td><p>Keep the unit stopped and inspect the transmitter, load, cable, and
+operating setup. Press <strong>RESET</strong> only after correcting the cause. If the
+code returns, have the system serviced.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>MM OCN</strong></p></td>
+<td><p>Over-current was detected on the negative output half-cycle.</p></td>
+<td><p>Keep the unit stopped and inspect the transmitter, load, cable, and
+operating setup. Press <strong>RESET</strong> only after correcting the cause. If the
+code returns, have the system serviced.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>MM LERR</strong></p></td>
+<td><p>The monitoring module has asserted its local error flag without a more
+specific voltage or current code.</p></td>
+<td><p>Press <strong>RESET</strong> once after confirming that the transmitter and load
+connections are correct. If the code returns, contact Zonge
+International technical support.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>MM ERR</strong></p></td>
+<td><p>The monitoring module reported an error that is not represented by a
+more specific display code.</p></td>
+<td><p>Record the code and operating conditions. Press <strong>RESET</strong> only after
+checking the transmitter and load. If the code returns, contact Zonge
+International technical support.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>GM OTMP</strong></p></td>
+<td><p>The gate-driver module temperature exceeded its protection threshold.</p></td>
+<td><p>Allow the unit to cool. Check ambient temperature, ventilation, and fan
+operation, then press <strong>RESET</strong>. If the code returns, do not transmit;
+have the cooling and gate-driver systems serviced.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>GM LERR</strong></p></td>
+<td><p>The gate-driver module has asserted its local error flag without a more
+specific temperature code.</p></td>
+<td><p>Press <strong>RESET</strong> once after confirming that the unit has adequate cooling
+and all external connections are secure. If the code returns, contact
+Zonge International technical support.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>FM LERR</strong></p></td>
+<td><p>The cooling/fan module has asserted its local error flag.</p></td>
+<td><p>Check that vents are clear and that the fans operate normally. If a fan
+is not operating, do not transmit. Press <strong>RESET</strong> once after correcting
+the cause; have the cooling system serviced if the code returns.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The display reports one protection label at a time. If more than one condition
+is active, correcting the displayed condition and pressing <strong>RESET</strong> may reveal
+another code. The unit is ready to transmit only when the reset check completes
+and <strong>RDY</strong> appears.</p>
+<p>If a code persists after the stated checks, record the exact code, operating
+mode, frequency, connected equipment, and the conditions immediately before
+the stop. Provide this information to Zonge International technical support.</p>
+</section>
+<section id="wi-fi-not-visible">
+<h2>Wi-Fi Not Visible<a class="headerlink" href="#wi-fi-not-visible" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>No ZT-100 SSID appears.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>On the front panel, open <strong>More Info</strong> and set <strong>Wi-Fi status</strong> to <strong>ON</strong>.</p></li>
+<li><p>Wait for the Wi-Fi icon to appear on the top bar.</p></li>
+</ul>
+</section>
+<section id="can-t-open-the-web-ui">
+<h2>Can’t Open the Web UI<a class="headerlink" href="#can-t-open-the-web-ui" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Browser cannot reach the device page.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>If in hotspot mode, connect to the device SSID and open
+<code class="docutils literal notranslate"><span class="pre">http://10.10.10.10/</span></code>.</p></li>
+<li><p>If in local network mode, use the IP address shown on the screen.</p></li>
+<li><p>Confirm <strong>Wi-Fi status</strong> is <strong>ON</strong>.</p></li>
+</ul>
+</section>
+<section id="custom-file-upload-fails">
+<h2>Custom File Upload Fails<a class="headerlink" href="#custom-file-upload-fails" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Upload rejected or file not listed.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Ensure the file extension is <strong>.usm</strong>.</p></li>
+<li><p>The web UI rejects files larger than 256 KB.</p></li>
+<li><p>Stay in <strong>Custom</strong> mode while uploading.</p></li>
+</ul>
+</section>
+<section id="ota-update-fails">
+<h2>OTA Update Fails<a class="headerlink" href="#ota-update-fails" title="Link to this heading"></a></h2>
+<p>Symptoms:</p>
+<ul class="simple">
+<li><p>Upload rejected or target mismatch.</p></li>
+</ul>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Confirm the firmware file matches the selected target in the web UI.</p></li>
+<li><p>If the upload is rejected, re-check target selection and file version.</p></li>
+<li><p>Keep the browser open until the update process completes.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user_generated_signals.html" class="btn btn-neutral float-left" title="Generate User Defined Sequences" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="specifications.html" class="btn btn-neutral float-right" title="Specifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, ZONGE International.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
